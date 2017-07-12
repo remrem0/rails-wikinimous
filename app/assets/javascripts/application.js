@@ -14,3 +14,12 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require ace-rails-ap
+
+$(document).ready(function() {
+if ($("#article_content").length > 0) {
+var article_content = ace.edit("editor");
+    article_content.setTheme("ace/theme/monokai");
+    article_content.getSession().setMode("ace/mode/javascript");
+}
+});

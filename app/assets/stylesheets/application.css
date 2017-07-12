@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+#editor {
+  height:300px;
+}
+
+#article-content {
+  height: 100px;
+}
